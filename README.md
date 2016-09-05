@@ -7,7 +7,7 @@ For printing values in the result panel... for when you're too lazy to open the 
 <pre class="results"></pre>
 <script>
   var index = 0;
-  var printResult = (msg) => {
+  var printResult = function(msg) {
     index++;
     var result = '<p class="results__result">';
     result += '<span class="results__result-index">' + index + ': </span>'; 
