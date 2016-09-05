@@ -4,16 +4,16 @@ For printing values in the result panel... for when you don't want to open the i
 ### In the HTML window...
 ```javascript
 <h3>Results</h3>
-<code class="results"></code>
+<pre class="results"></pre>
 <script>
   var index = 0;
   var printResult = (msg) => {
-	index++;
-	var result = '<p class="results__result">';
-	result += '<span class="results__result-index">' + index + ': </span>'; 
-	result += JSON.stringify(msg) + ';'
-	result += '</p>';
-	document.querySelector('.results').innerHTML += result;
+    index++;
+    var result = '<p class="results__result">';
+    result += '<span class="results__result-index">' + index + ': </span>'; 
+    result += JSON.stringify(msg, null, 2) + ';'
+    result += '</p>';
+    document.querySelector('.results').innerHTML += result;
   }
 </script>
 ```
