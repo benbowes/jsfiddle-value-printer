@@ -1,5 +1,5 @@
 # jsfiddle-value-printer
-For printing values in the result panel... for when you don't want to open the inspector to see a console.log.
+For printing values in the result panel... for when you're too lazy to open the inspector to view console.log() output.
 
 ### In the HTML window...
 ```javascript
